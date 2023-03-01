@@ -3,6 +3,8 @@
 kullanici=$(whoami)
 
 sudo apt install docker.io
+sudo usermod -aG docker $kullanici
+sudo systemctl restart docker
 docker build -t ros_ehli .
 mkdir ~/ros
 
