@@ -2,8 +2,7 @@ FROM ros:melodic
 
 RUN apt-get update && \
     apt-get install curl gnupg apt-utils -y && \
-    apt-get install -y tilix git bash-completion ros-melodic-desktop-full && \
-    adduser ros_sistemi
+    apt-get install -y tilix git bash-completion ros-melodic-desktop-full 
     
 
 ENV DISPLAY=:0
